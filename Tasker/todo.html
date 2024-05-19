@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .modal {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fefefe;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            z-index: 1;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="whole-container-2">
+        <div class="card-1">
+            <div class="elements">
+                <img class="logo" src="./todolist.jpg" alt="">
+                <div class="ele-container">
+                    <div class="task">
+                        <i class="fa-solid fa-clipboard"></i>
+                        <span class="name">Task</span>
+                    </div>
+                    <div class="task">
+                        <i class="fa-regular fa-folder"></i>
+                        <select id="category">
+                            <option>Categories</option>
+                        </select>
+                    </div>
+                    <div class="task">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="name">Settings</span>
+                    </div>
+                    <div class="task" id="logout" onclick="logout()" >
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span class="name">LogOut</span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="task-adder">
+            <h1 class="task-title">All your tasks</h1>
+            <div class="option-task">
+                <p class="sub-heading">Tasks</p>
+                <div class="icons">
+                    <button id="all">All</button>
+                    <button id="done">Done</button>
+                    <button id="notdone">Not Done</button>
+                    <i class="fa-solid fa-filter" id="filterIcon" onclick="filterTasks()"></i>
+                </div>
+            </div>
+            <button onclick="showAddTaskModal()">Add Task</button>
+            <ul id="taskList">
+                <!-- Task items will be added here dynamically -->
+            </ul>
+            <!-- The Add Task Modal -->
+            <div id="addTaskModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeAddTaskModal()">&times;</span>
+                    <h2>Add Task</h2>
+                    <input type="text" id="taskNameInput" placeholder="Task Name">
+                    <select id="taskCategoryInput">
+                        <!-- Categories will be added dynamically -->
+                    </select>
+                    <button onclick="cancelAddTask()">Cancel</button>
+                    <button onclick="confirmAddTask()">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./tasker.js"></script>
+</body>
+</html>

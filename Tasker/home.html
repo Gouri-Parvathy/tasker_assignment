@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="whole-container">
+      <div class="card">
+        <div class="logo-left">
+            <img class="illus1" src="./todolist.jpg" alt="">
+        </div>
+         <div class="right-container">
+          <div class="sign-up-page">
+          <p class="heading">Welcome to Tasker</p>
+          <p class="description">Please,insert your information to acccess your tasks</p>
+           <div class="email">
+            <label class="name">Email</label>
+            <input class="mail-box" id="mailid" type="text" placeholder="Insert your email">
+           </div>
+           <div class="pass">
+            <label class="name">Password</label>
+            <input class="password" id="passwordid" type="password" placeholder="Insert your password">
+           </div>
+           <div class="remember">
+            <input type="checkbox">
+            <label for="me">Remember me</label><br>
+           </div>
+           <button class="sign" onclick="signin()">Sign In</button>
+           <p class="account">Don't have an account? <a id="login" href="./signup.html">Sign Up</a></p>
+         </div>
+        </div>
+      </div>
+    </div>
+     <script src="./home.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'poppins' ;
+}
+.whole-container{
+    height: 100vh;
+    width: 100wv;
+}
+.logo-left{
+    height: 100vh; 
+    width: 50%;
+}
+.illus1{
+    height: 100vh;
+}
+.card{
+  display: flex;
+}
+.right-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    font-size: 30px;
+    font-weight: 700;
+    /* padding-bottom: 20px; */
+}
+.mail-box{
+    height: 35px;
+    width: 320px;
+    border-radius: 8px;
+    padding-left: 7px;
+}
+.password{
+    height: 35px;
+    width: 320px;
+    border-radius: 8px;
+    padding-left: 7px;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sign{
+    height: 35px;
+    width: 320px;
+    border-radius: 10px;
+    background-color: rgb(127, 127, 236);
+   border: none;
+   color: white;
+    
+}
+.sign-in{
+    text-decoration: none;
+    color: white;
+}
+.description{
+    padding: 20px 0px 20px 0px;
+}
+.pass{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.remember{
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+.account{
+    padding-top: 20px;
+}
+#login{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(127, 127, 236) ;
+}
+.logo{
+    width: 100px;
+    padding: 30px;
+}
+#category{
+    border-width: 0;
+}
+.task-logo{
+    width: 13px;
+    height: 13px;
+}
+.task{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+.name{
+    font-size: 15px;
+    font-weight: 500;
+}
+.elements{
+    width: 20%;
+   
+}
+.task-adder{
+    background-color: rgb(236, 232, 232);
+    width: 90%;
+    height: 100vh;
+}
+.card-1{
+    display: flex;
+    
+}
+#logout{
+    margin-top: 400px;
+}
+.signup-card{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    flex-direction: column;
+    border-radius: 30px;
+    
+}
+.whole-container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:linear-gradient(rgb(124, 31, 124),rgb(96, 52, 241));
+}
+.first-name{
+    margin-bottom: 10px;
+}
+.last-name{
+    margin-bottom: 10px;
+}
+.email-info{
+    margin-bottom: 10px; 
+}
+.pass-info{
+    margin-bottom: 40px;
+    }
+.mail{
+    height: 35px;
+    width: 320px;
+    border-radius: 8px;
+    padding-left: 7px;
+    margin-left: 33px;
+    border-color: black;
+}
+.space{
+    margin-bottom: 60px;
+}
+.color{
+    padding-right: 10px;
+}
+.margin{
+    margin-left: 5px;
+}
+.whole-container-2{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.task-title{
+    text-align: center;
+    padding-top: 20px;
+}
+.option-task{
+    display: flex;
+}
